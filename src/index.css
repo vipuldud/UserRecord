@@ -1,0 +1,109 @@
+.user-table-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .table-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .user-table td {
+    color: #666;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .eye-color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* Eye color dot colors */
+  .eye-color-dot[data-color="Green"] {
+    background-color: #32a852;
+  }
+  
+  .eye-color-dot[data-color="Brown"] {
+    background-color: #8b572a;
+  }
+  
+  .eye-color-dot[data-color="Gray"] {
+    background-color: #808080;
+  }
+  
+  /* Hover and selection styles */
+  .user-table tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .user-table tr.selected {
+    background-color: #e6e6e6;
+  }
+  
+  @media (max-width: 768px) {
+    .user-table th,
+    .user-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .user-avatar {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .user-name {
+      font-size: 14px;
+    }
+  
+    .eye-color-dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
